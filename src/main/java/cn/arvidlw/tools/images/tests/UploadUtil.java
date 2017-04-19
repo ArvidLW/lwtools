@@ -1,4 +1,4 @@
-package cn.arvdlw.tools.images.tests;
+package cn.arvidlw.tools.images.tests;
 
 import java.awt.Image;
 import java.io.File;

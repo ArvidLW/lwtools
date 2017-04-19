@@ -1,4 +1,4 @@
-package cn.arvdlw.tools.images.tests;
+package cn.arvidlw.tools.images.tests;
 
 import java.io.File;
 import java.io.FileNotFoundException;

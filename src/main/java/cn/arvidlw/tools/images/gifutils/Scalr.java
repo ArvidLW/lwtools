@@ -1,4 +1,4 @@
-package cn.arvdlw.tools.images.gifutils;
+package cn.arvidlw.tools.images.gifutils;
 
 import java.awt.Color;
 import java.awt.Graphics;

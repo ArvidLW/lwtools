@@ -1,4 +1,4 @@
-package cn.arvdlw.tools.images.apps;
+package cn.arvidlw.tools.images.apps;
 
 /**
  * Created by lw_co on 2017/1/5.

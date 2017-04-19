@@ -1,4 +1,4 @@
-package cn.arvdlw.tools.images.tests;
+package cn.arvidlw.tools.images.tests;
 
 import java.awt.Image;
 import java.awt.geom.AffineTransform;
@@ -9,8 +9,8 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import javax.imageio.ImageIO;
 
-import cn.arvdlw.tools.images.gifutils.AnimatedGifEncoder;
-import cn.arvdlw.tools.images.gifutils.GifDecoder;
+import cn.arvidlw.tools.images.gifutils.AnimatedGifEncoder;
+import cn.arvidlw.tools.images.gifutils.GifDecoder;
 import com.sun.image.codec.jpeg.JPEGCodec;
 import com.sun.image.codec.jpeg.JPEGImageEncoder;
 

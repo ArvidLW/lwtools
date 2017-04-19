@@ -1,4 +1,4 @@
-package cn.arvdlw.tools.images.apps;
+package cn.arvidlw.tools.images.apps;
 
 /**
  * Created by lw_co on 2017/1/5.
@@ -22,11 +22,9 @@ import java.io.OutputStream;
 
 import javax.imageio.ImageIO;
 
-import cn.arvdlw.tools.images.gifutils.AnimatedGifEncoder;
-import cn.arvdlw.tools.images.gifutils.GifDecoder;
-import cn.arvdlw.tools.images.gifutils.Scalr;
-import cn.arvdlw.tools.images.gifutils.Scalr.Method;
-import cn.arvdlw.tools.images.gifutils.Scalr.Mode;
+import cn.arvidlw.tools.images.gifutils.AnimatedGifEncoder;
+import cn.arvidlw.tools.images.gifutils.GifDecoder;
+import cn.arvidlw.tools.images.gifutils.Scalr;
 
 import com.sun.image.codec.jpeg.JPEGCodec;
 import com.sun.image.codec.jpeg.JPEGEncodeParam;
@@ -208,7 +206,7 @@ public class ImageUtil {
         checkParams(in, out, maxWidth, maxHeight, quality);
         //
         BufferedImage image = ImageIO.read(in);
-        image = Scalr.resize(image, Method.AUTOMATIC, Mode.AUTOMATIC, maxWidth, maxHeight);
+        image = Scalr.resize(image, Scalr.Method.AUTOMATIC, Scalr.Mode.AUTOMATIC, maxWidth, maxHeight);
         // create new image with right size/format
         BufferedImage bufferedImage = new BufferedImage(image.getWidth(), image.getHeight(), BufferedImage.TYPE_INT_RGB);
         Graphics2D g = bufferedImage.createGraphics();
@@ -236,7 +234,7 @@ public class ImageUtil {
         checkParams(in, out, maxWidth, maxHeight, quality);
         //
         BufferedImage image = ImageIO.read(in);
-        image = Scalr.resize(image, Method.AUTOMATIC, Mode.AUTOMATIC, maxWidth, maxHeight);
+        image = Scalr.resize(image, Scalr.Method.AUTOMATIC, Scalr.Mode.AUTOMATIC, maxWidth, maxHeight);
         if (watermark != null && watermark.length > 0) {
             makeWatermark(watermark, image, font, fontColor);
         }
@@ -259,7 +257,7 @@ public class ImageUtil {
 
         for (int i = 0; i < gd.getFrameCount(); i++) {
             BufferedImage frame = gd.getFrame(i);
-            BufferedImage rescaled = Scalr.resize(frame, Method.AUTOMATIC, Mode.AUTOMATIC, maxWidth, maxHeight);
+            BufferedImage rescaled = Scalr.resize(frame, Scalr.Method.AUTOMATIC, Scalr.Mode.AUTOMATIC, maxWidth, maxHeight);
             if (watermark != null && watermark.length > 0) {
                 makeWatermark(watermark, rescaled, font, fontColor);
             }

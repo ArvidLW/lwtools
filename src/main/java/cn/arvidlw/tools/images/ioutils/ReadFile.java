@@ -1,6 +1,6 @@
-package cn.arvdlw.tools.images.ioutils;
+package cn.arvidlw.tools.images.ioutils;
 
-import cn.arvdlw.tools.images.apps.ImagesCompressor;
+import cn.arvidlw.tools.images.apps.ImagesCompressor;
 
 import java.io.File;
 import java.io.IOException;

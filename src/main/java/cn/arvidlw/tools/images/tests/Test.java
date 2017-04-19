@@ -1,6 +1,4 @@
-package cn.arvdlw.tools.images.tests;
-
-import cn.arvdlw.tools.images.tests.UploadUtil;
+package cn.arvidlw.tools.images.tests;
 
 public class Test {
  public static void main(String[] arg){

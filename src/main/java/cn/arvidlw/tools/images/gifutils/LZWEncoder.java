@@ -1,4 +1,4 @@
-package cn.arvdlw.tools.images.gifutils;
+package cn.arvidlw.tools.images.gifutils;
 
 /**
  * Created by lw_co on 2017/1/5.
